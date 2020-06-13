@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dropdown and Datalists</title>
+</head>
+<body>
+    <h1>HTML Dropdown and Datalists</h1>
+    <form name="my-form">
+        <p class="form-box">
+            <label for="region" title="State or territory">Region</label>
+            <select name="region" id="region">
+                <optgroup label="status">
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Mombasa">Mombasa</option>
+                    <option value="Kisumu">Kisumu</option>
+                    <option value="Eldoret">Eldoret</option>
+                </optgroup>
+                <optgroup label="towns">
+                    <option value="Nairobi">Nakuru</option>
+                    <option value="Mombasa">Thika</option>
+                    <option value="Kisumu">Kitale</option>
+                    <option value="Eldoret">Kakamega</option>
+                </optgroup>
+            </select>
+        </p>
+        <p class="form-box">
+            <label for="city">City</label>
+            <input type="text" name="city" list="cities" id="city">
+        </p>
+        <p class="form-box">
+            <button id="btnSend">Click</button>
+        </p>
+    </form>
+    <datalist id="cities">
+        <option value="Nairobi"></option>
+        <option value="Mombasa"></option>
+        <option value="Kisumu"></option>
+        <option value="Eldoret"></option>
+    </datalist>
+</body>
+</html>
